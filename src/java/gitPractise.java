@@ -14,6 +14,7 @@ public class gitPractise {
 
 
         getMax(randomNumbers);
+        getOddNumbers(randomNumbers);
 
     }
     public static List<Integer> loadList(List<Integer> numbers, int size) {
@@ -68,6 +69,16 @@ public class gitPractise {
             }
         }
         return sum;
+    }
+
+    public static int getOddNumbers(List<Integer> numbers) {
+        int counter=0;
+        for (int i = 0; i < numbers.size(); i++) {
+            if (numbers.get(i) % 2 != 0) {
+                counter++;
+            }
+        }
+        return counter;
     }
 
 }
