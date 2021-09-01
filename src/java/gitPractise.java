@@ -9,6 +9,7 @@ public class gitPractise {
         List<Integer> randomNumbers = loadList(numbers, 20);
         getMin(randomNumbers);
         getEvenNumbers(randomNumbers);
+        getTotalOfOddNumbers(randomNumbers);
 
     }
     public static List<Integer> loadList(List<Integer> numbers, int size) {
@@ -43,6 +44,16 @@ public class gitPractise {
             }
         }
         return counter;
+    }
+
+    public static int getTotalOfOddNumbers(List<Integer> numbers) {
+        int sum =0;
+        for (int i = 0; i < numbers.size(); i++) {
+            if (numbers.get(i) % 2 != 0) {
+                sum += numbers.get(i);
+            }
+        }
+        return sum;
     }
 
 }
