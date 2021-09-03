@@ -36,4 +36,51 @@ public class Animal implements AnimalInterface {
         // TODO
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setBirth(LocalDate birth) {
+        this.birth = birth;
+    }
+
+    public void setFavoriteToy(String favoriteToy) {
+        this.favoriteToy = favoriteToy;
+    }
+
+    public void setFavoriteFood(Food favoriteFood) {
+        this.favoriteFood = favoriteFood;
+    }
+
+    public void setHungry(boolean hungry) {
+        isHungry = hungry;
+    }
+
+    public void setOwner(Humanoid owner) {
+        this.owner = owner;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public LocalDate getBirth() {
+        return birth;
+    }
+
+    public String getFavoriteToy() {
+        return favoriteToy;
+    }
+
+    public Food getFavoriteFood() {
+        return favoriteFood;
+    }
+
+    public boolean isHungry() {
+        return isHungry;
+    }
+
+    public Humanoid getOwner() {
+        return owner;
+    }
 }
